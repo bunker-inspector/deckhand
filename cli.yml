@@ -1,0 +1,34 @@
+name: deckhand
+version: "1.0"
+author: Ted <tedgkassen@gmail.com>
+about: Monitors system resource usage and alerts you of extreme deviations
+args:
+    - baseline-duration:
+        short: b
+        long: baseline-duration
+        value_name: baseline-duration
+        help: The sampling period in seconds for setting a baseline
+    - polling-interval:
+        short: p
+        long: polling-interval
+        value_name: polling-interval
+        help: The number of seconds between collecting metrics
+    - polling-duration:
+        short: d
+        long: polling-duration
+        value_name: polling-duration
+        help: The length of time before baseline values should be updated
+    - standard-deviation-threshold:
+        short: s
+        long: standard-deviation-threshold
+        value_name: standard-deviation-threshold
+        help: The number of standard deviations away from the baseline to consider significant
+    - log-directory:
+        long: log-directory
+        value_name: log-directory
+        help: The directory to store logs
+    - logger:
+        short: -l
+        long: logger
+        value_name: logger
+        help: Enable a logger
