@@ -1,5 +1,4 @@
-# deckhand
-A tools for reporting system resource anomolies
+system resource tracker
 
 Build and run with
 ```
